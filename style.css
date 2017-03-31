@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------------------------*
+ * CSS adicionado pelo João
+ */
+.autor-esquerda {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.texto-autor{
+  text-align: justify;
+  margin-left: 170px;
+}
+#site-title img {
+  max-width: 130px;
+}
+.autor {
+  clear: left;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+
+.aluno {
+    width: 45%;
+    margin-right: 6%;
+    margin-bottom: 3%;
+    display: inline-block;
+    padding: 0.75em;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+.aluno:nth-child(2n) {
+    margin-right: 0;
+}
+
+.aluno a {
+    word-break: break-all;
+}
+
+@media screen and (max-width: 760px) {
+    .aluno {
+        width: 100%;
+        margin-bottom: 1.25em;
+        text-align: left;
+        font-size: 0.7em;
+    }
+}
+
+/*-------------------------- Slider de notícias ---------------------*/
+/* - reduz um pouco a altura do slider sem perder a razão de aspecto */
+@media screen and (min-width: 961px) {
+    #slider .post.hentry {
+        height: 299px;
+        overflow:hidden;
+        display: block;
+    }
+
+    #slider .wp-post-image {
+        position: relative;
+        top: -33px;
+    }
+}
+
+.imagem-icone{
+    margin-left: 6em;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.icone-email,
+.icone-lattes {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-left: 0;
+    display: inline-block;
+    background-size: 1em;
+    background-repeat: no-repeat;
+}
+
+.icone-email {
+    background-image: url(data:image/png;base64,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);
+}
+
+.icone-lattes {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAExklEQVRYhc2YWWiUVxTHfzOTbyYz4zj7ErNp3OIWW1eMNBobt1QNrV0tCNaWLrb6UErB+mChVCo+5aEqFupLsaUKPhQDhUIUJcYGrSk6ijFxNJNMTDKTyWT2rQ+hapz5vnyR0Pp//M659/6499x7zvkU2Ww2y3Mi5f8N8KSeK5iCiTjf+jvEtZYgN64N4x9I0H0vSlFpIUaTQGmFlpmVeuYuNDCzUv9MMAo5MdP7IMbR77poPe8nEk5L+hZqlZTO0LGyxsym7U7KZ+omD+bOzRG++vgmvQ9ikhMJggKrU4NGoyQSTjMynCIWTVOzwcanBypwFReOCyN5TP2+OF/vuyUJMq/KwLZ3ilhabUKrV1FQoCCTgWQiQ3gkjdcTRa2RF5qSMD823sdzNyJqr9vqYP+RuQiCIq/d6oCyCq0sEEmYB11Rmpv6RQfaXRo+O1CBICiIhNNcbvbj70/gKNJQtdyIySLIhhgXpvW8n1AwJTpw0dKpWOxquu5EOPTFbdztoUe2knItdQ0Odn5SiqBW4h9IcPpkD7v2liGoxY9M1OK+HhIzAVBcNhqQ3x/qHAMC0O2JcrLRw5fv32BkOIXRLNB2KcCRAx2Sc4rC9PclJAdmspDNSkP/eTHAscNdqFQKdu4p49xpHz//0D1xmMCgNMzgwwQKBePGRtOZPrruREaP1abm+OEurrYMTQxGq1NJLtJ9LwpA3TaHpF8inqHzdhijWcBiF0ilsvzY6CGZzH3eRGF0emkYrydKX0+ct3cXM6/KIOqnVCmYVjb2wWtvG+b6ldzdEYWx2NSSMIHBJO1tQQp1Kr45Op/VL1vz+tVvd1K5yEBfTxx/fxKATDpLc9NAjq/o1S6TkVPaLg6xfpsDR5GGb4/Np/VCgN/PPsTnjaHVqaitt7H5dRcKBfz2Sy/+gcdxePdWWD7MrHnjZ97LzX4Cg0nMVgGlSsGqWgurai05fpf+GOTUibG3qK8nnuMnekyViwwseHEqSom04h9I0HTaJwl89qdeDu51E49lJP1AYmdMVoH39pWTTGYwmgX6vHHc7SE8dyP4vDHCoTShYJKWZj87PiwdMzYYSPJXa5BfT3q5fiWYd37nNI18mGwmy6kT3TzsjbFyjYXiskIWLplKzUYrzmmjt+N+ZwRPR4SrLUMkExn6fQk63CO0Xgg8uvpimj47NyZFYQS1ki1vuTi41839Tu+Y7/opKrR6FWqNklgkTSiYIhHPkErJq+2VKgVrN9nkwwBUr7NQPkuHp+NxGZFMZBjyZxjyJ2UtnE9zF0xhySpTLqTUoNHraX/mRcX07kelebP3uCXYulfs6KdIv8YT0abXnKzJc0SyYGbM1rH8JfOkgFQtM7Jnf4WoXVZxWv+GC6Uqf2kpV4tXGDnYWCmZ5WXBvLDCSMUc+S3H01q72cah4wuwu3Lfliclq4nT6lSs3Wynw52bT6RkNAt88Pl0GnYUyfKX1cQB+Lpj7NpylZFh8br4X+kNBWxocPDm7mJKyiehO3harpJCajbYOCeRi+wuDXVb7Wx81flMLe6Eeu31DXaazvh4ci9LyrVMn6Ojtt7OstWmceugSYNZvNxI9Tor8ViGJdUm5szXU1llwGieeI+UT7Jj5r/Qc/V/5h923KcE7lwjVAAAAABJRU5ErkJggg==);
+}
+
+.email-equipe {
+    display: inline-block;
+    width: 25em;
+}
+
+.oculto{
+	display: none;
+}
+.publicacao{
+	margin-bottom: 1em;
+}
