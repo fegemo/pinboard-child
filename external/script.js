@@ -3,7 +3,7 @@ var inicializaFiltro = function() {
   if (!filtroEl) {
     return;
   }
-  var publicacoesEl = document.querySelectorAll(‘div.publicacao’);
+  var publicacoesEl = document.querySelectorAll('div.publicacao');
 
   function filtrar(evt) {
     var textoDigitado = evt.currentTarget.value;
