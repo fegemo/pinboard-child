@@ -4,7 +4,7 @@
       $parent_style = 'parent-style';
 
       wp_enqueue_style( 'child-style-ext',
-          '//fegemo.github.io/pinboard-child/external/style.css',
+          '//fegemo.github.io/prisma-pinboard-child/external/style.css',
           array(),
           wp_get_theme()->get('Version')
       );
@@ -25,7 +25,7 @@
           wp_get_theme()->get('Version')
       );
       wp_enqueue_script( 'child-script-ext',
-          '//fegemo.github.io/pinboard-child/external/script.js',
+          '//fegemo.github.io/prisma-pinboard-child/external/script.js',
           array(),
           null,
           true
