@@ -1,5 +1,5 @@
 var inicializaFiltro = function() {
-  var filtroEl = document.querySelector(‘#filtro’);
+  var filtroEl = document.querySelector('#filtro');
   if (!filtroEl) {
     return;
   }
