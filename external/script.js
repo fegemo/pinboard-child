@@ -20,9 +20,9 @@ var inicializaFiltro = function() {
     var publicacoesOcultasEl = document.querySelectorAll('div.publicacao.oculto');
     var numeroDeResultados = publicacoesEl.length - publicacoesOcultasEl.length;
     var resultadoEl = document.getElementById('resultados');
-    resultadoEl.innerHTML = numeroDeResultados + ' resultado(s)' ;
-    if (textoDigitado.length==0){
-      resultadoEl.classList.add('oculto');
+    if (!!resultadoEl) {
+      resultadoEl.innerHTML = numeroDeResultados + ' resultado(s)' ;
+      resultadoEl.classList.toggle('oculto', textoDigitado.length === 0);      
     }
   }
 
