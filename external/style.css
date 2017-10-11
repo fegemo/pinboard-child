@@ -1,3 +1,9 @@
-#ext-style {
-  border: 1px solid red;
+/* alinha as caixas de alunos pelo topo */
+.aluno {
+  vertical-align: top;
+}
+
+/* alinha os ícones com os links na página de alunos */
+.aluno img+a {
+    vertical-align: super;
 }
