@@ -11,7 +11,7 @@
 
 .autor-esquerda {
   border-radius: 5px;
-  transform: rotateY(27deg);
+  transform: rotateY(8deg);
   box-shadow: -6px 4px 4px rgba(0, 0, 0, .2);
 }
 
@@ -26,16 +26,16 @@
   width: auto;
 }
 
-@media (max-width: 760px) {
+@media screen and (max-width: 760px) {
   .autor-esquerda {
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    float: none !important;
+    display: block  !important;
+    margin-left: auto  !important;
+    margin-right: auto  !important;
   }
 
   .texto-autor {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 
   .texto-autor > strong:first-child {
