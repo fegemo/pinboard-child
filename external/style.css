@@ -3,6 +3,7 @@
   perspective: 275px;
   perspective-origin: left top;
   padding-bottom: 1em;
+  overflow: hidden;
 }
 
 .autor:not(:last-child) {
