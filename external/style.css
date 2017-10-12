@@ -47,6 +47,7 @@
 
   .autor:not(:last-child) {
     border-bottom: 1px dotted rgba(0, 0, 0, .4);
+    margin-bottom: 1em;
   }
 
   .email-equipe {
