@@ -32,6 +32,8 @@
     display: block  !important;
     margin-left: auto  !important;
     margin-right: auto  !important;
+    transform: none;
+    box-shadow: none;
   }
 
   .texto-autor {
