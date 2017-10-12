@@ -1,3 +1,57 @@
+/* ajusta a página de professores (equipe) */
+.autor {
+  perspective: 275px;
+  perspective-origin: left top;
+  padding-bottom: 1em;
+}
+
+.autor:not(:last-child) {
+  border-bottom: 1px dotted rgba(0, 0, 0, .1);
+}
+
+.autor-esquerda {
+  border-radius: 5px;
+  transform: rotateY(27deg);
+  box-shadow: -6px 4px 4px rgba(0, 0, 0, .2);
+}
+
+.contato-equipe {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.email-equipe {
+  display: initial;
+  width: auto;
+}
+
+@media (max-width: 760px) {
+  .autor-esquerda {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .texto-autor {
+    margin-left: 0;
+  }
+
+  .texto-autor > strong:first-child {
+    text-align: center;
+  }
+
+  .autor:not(:last-child) {
+    border-bottom: 1px dotted rgba(0, 0, 0, .4);
+  }
+
+  .email-equipe {
+    white-space: nowrap;
+  }
+}
+
+
 /* alinha as caixas de alunos pelo topo */
 .aluno {
   vertical-align: top;
