@@ -31,3 +31,6 @@ var inicializaFiltro = function() {
 };
 
 document.addEventListener('DOMContentLoaded', inicializaFiltro);
+
+
+alert('aaaaaaaaaaaaaaaa');
